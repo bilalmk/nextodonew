@@ -14,7 +14,7 @@ async function updateTodo(id: string, isDone: boolean, refresh: () => void) {
 }
 
 async function deleteTodo(id: string, refresh: () => void) {
-  await fetch("https://todoapisnew.vercel.app/api/todo/delete?id=${id}", {
+  await fetch(`https://todoapisnew.vercel.app/api/todo/delete?id=${id}`, {
     method: "DELETE",
   });
 

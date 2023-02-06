@@ -1,4 +1,4 @@
-import TodoList from "./todo-list";
+import TodoListNew from "./todo-list";
 import TodoAdd from "./todo-add";
 
 export default function Page() {
@@ -7,7 +7,7 @@ export default function Page() {
       <TodoAdd />
       {/*@ts-ignore */}
       {/* @ts-expect-error Server Component */}
-      <TodoList />
+      <TodoListNew />
     </div>
   );
 }
